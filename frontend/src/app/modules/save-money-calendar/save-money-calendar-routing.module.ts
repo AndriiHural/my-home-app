@@ -5,7 +5,7 @@ import { SaveMoneyCalendarComponent } from './components/save-money-calendar/sav
 const routes: Routes = [{ path: '', component: SaveMoneyCalendarComponent }];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
 export class SaveMoneyCalendarRoutingModule {}

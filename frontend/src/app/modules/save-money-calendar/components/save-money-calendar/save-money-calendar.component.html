@@ -1,42 +1,44 @@
 <div class="container">
-  <div class="header">
-    <div class="navigation">
-      <button
-        class="prev"
-        mat-raised-button
-        color="primary"
-        [disabled]="displayedMonth() === 1"
-        (click)="onMonthChange(-1)"
-      >
-        Previous
-      </button>
-      <div class="amount">
-        Month: <b>{{ displayedMonth() }}</b>
-      </div>
-      <button
-        class="next"
-        mat-raised-button
-        color="primary"
-        [disabled]="displayedMonth() === 12"
-        (click)="onMonthChange(1)"
-      >
-        Next
-      </button>
-    </div>
+	<div class="header">
+		<div class="navigation">
+			<button
+				class="prev"
+				mat-raised-button
+				color="primary"
+				[disabled]="displayedMonth() === 1"
+				(click)="onMonthChange(-1)"
+			>
+				Previous
+			</button>
+			<div class="amount">
+				Month:
+				<b>{{ displayedMonth() }}</b>
+			</div>
+			<button
+				class="next"
+				mat-raised-button
+				color="primary"
+				[disabled]="displayedMonth() === 12"
+				(click)="onMonthChange(1)"
+			>
+				Next
+			</button>
+		</div>
 
-    <div class="statistic">
-      This month: <b>{{ amount() }}</b>
-    </div>
-  </div>
+		<div class="statistic">
+			This month:
+			<b>{{ amount() }}</b>
+		</div>
+	</div>
 
-  <div class="row month">
-    <div *ngFor="let day of data()" class="day">
-      <div class="header">{{ day.name }}</div>
-      <div class="description">
-        <div class="amount" [ngClass]="{'random': day.isRandom}">
-            {{ day.amount }}
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="row month">
+		<div *ngFor="let day of data()" class="day">
+			<div class="header">{{ day.name }}</div>
+			<div class="description">
+				<div class="amount" [ngClass]="{ random: day.isRandom }">
+					{{ day.amount }}
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

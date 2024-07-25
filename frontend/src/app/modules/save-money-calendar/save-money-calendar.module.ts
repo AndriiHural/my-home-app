@@ -2,16 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SaveMoneyCalendarRoutingModule } from './save-money-calendar-routing.module';
 
-
-
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    SaveMoneyCalendarRoutingModule,
-  ]
+	declarations: [],
+	imports: [CommonModule, SaveMoneyCalendarRoutingModule],
 })
-export class SaveMoneyCalendarModule { }
+export class SaveMoneyCalendarModule {}
 
 /*
 06 - 5819
