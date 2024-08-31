@@ -5,10 +5,10 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{
-		path: 'save-money-calendar',
+		path: 'guilty-pleasure',
 		loadChildren: () =>
-			import('./modules/save-money-calendar/save-money-calendar.module').then(
-				module => module.SaveMoneyCalendarModule
+			import('./modules/guilty-pleasure/guilty-pleasure.routing').then(
+				module => module.GuiltyPleasureRouting
 			),
 	},
 ];

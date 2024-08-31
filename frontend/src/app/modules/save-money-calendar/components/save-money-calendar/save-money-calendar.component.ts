@@ -3,6 +3,7 @@ import { DateHelper } from 'src/app/shared/date/date.helper';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { SaveMoneyDB } from '../../services/save-money-db.service';
+import { SaveMoneyCalenderActionService } from '../../services/save-money-calender-action/save-money-calender-action.service';
 
 export type CalendarMonthData = Array<CalendarDay>;
 
@@ -33,7 +34,7 @@ export class SaveMoneyCalendarComponent implements OnInit {
 	public readonly amount = computed<number>(() => this.getAmount(this.data()));
 	public readonly data = computed<CalendarMonthData>(() => this.getData(this.displayedMonth()));
 
-	constructor(private readonly saveMoneyDB: SaveMoneyDB) {
+	constructor(private readonly saveMoneyDB: SaveMoneyDB, private readonly saveMoneyCalenderActionService:SaveMoneyCalenderActionService) {
 		effect(() => {
 			console.log(JSON.stringify(this.data()));
 			console.log(this.data());
@@ -52,6 +53,10 @@ export class SaveMoneyCalendarComponent implements OnInit {
 	public onMonthChange(direction: number): void {
 		this.displayedMonth.update(value => value + direction);
 	}
+
+    public onAccumulateClick():void{
+        this.saveMoneyCalenderActionService.accumulate();
+    }
 
 	private getData(month: number): CalendarMonthData {
 		console.log('month', month);

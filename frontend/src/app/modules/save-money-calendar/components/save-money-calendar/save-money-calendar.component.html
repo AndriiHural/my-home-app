@@ -25,9 +25,12 @@
 			</button>
 		</div>
 
-		<div class="statistic">
-			This month:
-			<b>{{ amount() }}</b>
+		<div>
+			<div class="statistic">
+				This month:
+				<b>{{ amount() }}</b>
+			</div>
+            <button (click)="onAccumulateClick()">Accumulate</button>
 		</div>
 	</div>
 
