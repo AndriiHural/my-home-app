@@ -232,8 +232,41 @@ export class SaveMoneyDB {
 			{ id: 243, name: 30, amount: 318, isRandom: true, originalAmount: 243 },
 			{ id: 244, name: 31, amount: 244, isRandom: false, originalAmount: 244 },
 		],
+        // 09 September (01 October)
+		[
+			{ id: 245, name: 1, amount: 245, isRandom: false, originalAmount: 245 },
+			{ id: 246, name: 2, amount: 246, isRandom: false, originalAmount: 246 },
+			{ id: 247, name: 3, amount: 58, isRandom: true, originalAmount: 247 },
+			{ id: 248, name: 4, amount: 248, isRandom: false, originalAmount: 248 },
+			{ id: 249, name: 5, amount: 249, isRandom: false, originalAmount: 249 },
+			{ id: 250, name: 6, amount: 143, isRandom: true, originalAmount: 250 },
+			{ id: 251, name: 7, amount: 251, isRandom: false, originalAmount: 251 },
+			{ id: 252, name: 8, amount: 252, isRandom: false, originalAmount: 252 },
+			{ id: 253, name: 9, amount: 294, isRandom: true, originalAmount: 253 },
+			{ id: 254, name: 10, amount: 254, isRandom: false, originalAmount: 254 },
+			{ id: 255, name: 11, amount: 255, isRandom: false, originalAmount: 255 },
+			{ id: 256, name: 12, amount: 271, isRandom: true, originalAmount: 256 },
+			{ id: 257, name: 13, amount: 257, isRandom: false, originalAmount: 257 },
+			{ id: 258, name: 14, amount: 258, isRandom: false, originalAmount: 258 },
+			{ id: 259, name: 15, amount: 155, isRandom: true, originalAmount: 259 },
+			{ id: 260, name: 16, amount: 260, isRandom: false, originalAmount: 260 },
+			{ id: 261, name: 17, amount: 261, isRandom: false, originalAmount: 261 },
+			{ id: 262, name: 18, amount: 320, isRandom: true, originalAmount: 262 },
+			{ id: 263, name: 19, amount: 263, isRandom: false, originalAmount: 263 },
+			{ id: 264, name: 20, amount: 264, isRandom: false, originalAmount: 264 },
+			{ id: 265, name: 21, amount: 327, isRandom: true, originalAmount: 265 },
+			{ id: 266, name: 22, amount: 266, isRandom: false, originalAmount: 266 },
+			{ id: 267, name: 23, amount: 267, isRandom: false, originalAmount: 267 },
+			{ id: 268, name: 24, amount: 97, isRandom: true, originalAmount: 268 },
+			{ id: 269, name: 25, amount: 269, isRandom: false, originalAmount: 269 },
+			{ id: 270, name: 26, amount: 270, isRandom: false, originalAmount: 270 },
+			{ id: 271, name: 27, amount: 43, isRandom: true, originalAmount: 271 },
+			{ id: 272, name: 28, amount: 272, isRandom: false, originalAmount: 272 },
+			{ id: 273, name: 29, amount: 273, isRandom: false, originalAmount: 273 },
+			{ id: 274, name: 30, amount: 150, isRandom: true, originalAmount: 274 },
+		],
 	];
-
+// test comit
 	public readonly localDB: CalendarMonthData[] = [];
 
 	private readonly KEY = 'save-money-db';
